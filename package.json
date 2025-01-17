@@ -1,0 +1,41 @@
+{
+    "name": "@stealthstudios/sdk-adapter-sqlite",
+    "version": "1.0.0",
+    "description": "A sqlite adapter for the StealthSDK Core.",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsup",
+        "lint": "eslint --fix --quiet src/**/*.ts --config eslint.config.ts",
+        "format": "prettier --write src/**/*.ts",
+        "ci:prettier": "prettier --check src/**/*.ts",
+        "ci:tsc": "tsc --noEmit",
+        "prepack": "npm run build"
+    },
+    "dependencies": {
+        "@libsql/client": "^0.14.0",
+        "@stealthstudios/sdk-core": "^1.0.0",
+        "drizzle-orm": "^0.38.4"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.18.0",
+        "@types/node": "^22.10.7",
+        "drizzle-kit": "^0.30.2",
+        "eslint": "^9.18.0",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "jiti": "^2.4.2",
+        "prettier": "^3.4.2",
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.20.0"
+    },
+    "engines": {
+        "node": ">=23.0.0"
+    },
+    "files": [
+        "dist",
+        "drizzle/**.sql",
+        "drizzle/meta"
+    ]
+}
