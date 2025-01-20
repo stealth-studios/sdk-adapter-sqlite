@@ -21,7 +21,7 @@ CREATE TABLE `Message` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`content` text NOT NULL,
 	`role` text NOT NULL,
-	`senderId` integer,
+	`senderId` text,
 	`conversationId` integer NOT NULL,
 	`context` blob DEFAULT '[]' NOT NULL,
 	`createdAt` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `Message` (
 );
 --> statement-breakpoint
 CREATE TABLE `Player` (
-	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`id` text PRIMARY KEY NOT NULL,
 	`name` text NOT NULL,
 	`conversationId` integer,
 	`createdAt` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
