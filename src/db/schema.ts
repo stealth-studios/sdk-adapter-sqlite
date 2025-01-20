@@ -21,7 +21,7 @@ export const conversation = sqliteTable("Conversation", {
 });
 
 export const player = sqliteTable("Player", {
-    id: integer("id").primaryKey({ autoIncrement: true }).notNull(),
+    id: text("id").primaryKey().notNull(),
     name: text("name").notNull(),
     conversationId: integer("conversationId").references(
         () => conversation.id,
@@ -47,7 +47,7 @@ export const message = sqliteTable("Message", {
     id: integer("id").primaryKey({ autoIncrement: true }).notNull(),
     content: text("content").notNull(),
     role: text("role").notNull(),
-    senderId: integer("senderId").references(() => player.id, {
+    senderId: text("senderId").references(() => player.id, {
         onDelete: "set null",
         onUpdate: "cascade",
     }),

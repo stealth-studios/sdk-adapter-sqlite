@@ -267,7 +267,7 @@ export default class SQLiteAdapter extends Adapter {
     async addMessageToConversation(
         conversationId: number,
         insertedMessage: {
-            senderId?: number;
+            senderId?: string;
             content: string;
             role: string;
             context: {
