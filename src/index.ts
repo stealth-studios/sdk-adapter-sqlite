@@ -77,7 +77,7 @@ export default class SQLiteAdapter extends Adapter {
             return {
                 hash: characterData.hash,
                 name: characterData.name,
-                data: result.data,
+                data: JSON.parse(result.data as string),
             };
         } catch (error) {
             throw new Error(`Failed to create character: ${error}`);
