@@ -13,7 +13,7 @@ _A powerful sqlite adapter for the Stealth SDK_
 
 ## 📖 Documentation
 
-You may view the documentation for this library [here](https://google.com/docs/adapters/sqlite)!
+You may view the documentation for this library [here](https://docs.stealthsdk.com/adapters/sqlite)!
 
 ## 🤝 Contributing
 
