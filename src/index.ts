@@ -264,6 +264,28 @@ export default class SQLiteAdapter extends Adapter {
         }
     }
 
+    async setConversationCharacter(
+        conversationId: number,
+        character: Character,
+    ) {
+        const currentCharacter = await this.getConversationBy({
+            id: conversationId,
+        });
+
+        if (currentCharacter?.character?.hash === character.hash) {
+            return;
+        }
+
+        await this.db
+            .delete(message)
+            .where(eq(message.conversationId, conversationId));
+
+        await this.db
+            .update(conversation)
+            .set({ characterHash: character.hash })
+            .where(eq(conversation.id, conversationId));
+    }
+
     async addMessageToConversation(
         conversationId: number,
         insertedMessage: {
