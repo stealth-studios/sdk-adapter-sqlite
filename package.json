@@ -1,6 +1,6 @@
 {
     "name": "@stealthstudios/sdk-adapter-sqlite",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A sqlite adapter for the StealthSDK Core.",
     "main": "dist/index.js",
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "@libsql/client": "^0.14.0",
-        "@stealthstudios/sdk-core": "^1.1.0",
+        "@stealthstudios/sdk-core": "^1.1.1",
         "drizzle-orm": "^0.38.4"
     },
     "devDependencies": {
