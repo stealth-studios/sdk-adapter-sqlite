@@ -5,9 +5,9 @@
 _A powerful sqlite adapter for the Stealth SDK_
 
 [![CI Status](https://github.com/stealth-studios/sdk-adapter-sqlite/actions/workflows/ci-ts.yaml/badge.svg)](https://github.com/stealth-studios/sdk-adapter-sqlite/actions/workflows/ci-ts.yaml)
-[![License](https://img.shields.io/github/license/stealth-studios/sdk-adapter-sqlite)](https://github.com/stealth-studios/sdk-adapter-sqlite/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/@stealthstudios/sdk-adapter-sqlite)](https://www.npmjs.com/package/@stealthstudios/sdk-adapter-sqlite)
-[![npm downloads](https://img.shields.io/npm/dm/@stealthstudios/sdk-adapter-sqlite)](https://www.npmjs.com/package/@stealthstudios/sdk-adapter-sqlite)
+[![License](https://img.shields.io/github/license/stealth-studios/sdk-adapter-sqlite?)](https://github.com/stealth-studios/sdk-adapter-sqlite/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@stealthstudios/sdk-adapter-sqlite?)](https://www.npmjs.com/package/@stealthstudios/sdk-adapter-sqlite)
+[![npm downloads](https://img.shields.io/npm/dm/@stealthstudios/sdk-adapter-sqlite?)](https://www.npmjs.com/package/@stealthstudios/sdk-adapter-sqlite)
 
 </div>
 
